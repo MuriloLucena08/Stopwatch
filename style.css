@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Raleway', 'sans-serif';
+}
+
+:root {
+    --stopwatch-primary-color: #156719;
+    --stopwatch-primary-shade:#2ACB32;
+    --stopwatch-secondary-color: #0F30EC;
+    --stopwatch-secondary-shade:#183afd;
+    --stopwatch-ligth-color:#E5E7F0;
+    --body-background-color:#87C0E1;
+}
+
+@media (max-width:600px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    border: 3px solid var(--stopwatch-ligth-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--stopwatch-secondary-color);
+    color: var(--stopwatch-ligth-color);
+}
+
+button.secondary-button {
+    background-color: var(--stopwatch-primary-color);
+    color: #000000
+}
+
+button:hover {
+    background-color: var(--stopwatch-secondary-shade);
+}
+
+button:focus {
+    border: 3px solid #000000;
+}
+
+button.secondary-button:hover{
+    background-color: var(--stopwatch-primary-shade);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: var(--body-background-color);
+    font-size: 3rem;
+}
+
+#stopwatch-wrapper {
+    background-color: var(--stopwatch-primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.button-box {
+    margin: 1rem 0 0.5rem 0;
+}
+
+#stopwatch-display {
+    font-family: 'Major Mono Display', 'Orbitron';
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
